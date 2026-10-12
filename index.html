@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merto Furniture - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="owl/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owl/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar small text-muted border-bottom">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between py-2">
+
+                <!-- left group: language / currency / track -->
+                <div class="d-flex align-items-center gap-3">
+                    <!-- language dropdown -->
+                    <div class="dropdown">
+                        <a class="dropdown-toggle text-muted text-decoration-none" href="#" role="button"
+                            id="langDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="https://flagcdn.com/us.svg" class="flag" alt="flag"> English
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="langDropdown">
+                            <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/es.svg"
+                                        class="flag me-1">Español</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/fr.svg"
+                                        class="flag me-1">Français</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/pt.svg"
+                                        class="flag me-1">Português</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- currency dropdown -->
+                    <div class="dropdown">
+                        <a class="dropdown-toggle text-muted text-decoration-none border-end border-end-3 border-end-dark"
+                            href="#" role="button" id="currencyDropdown" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            USD
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="currencyDropdown">
+                            <li><a class="dropdown-item" href="#">EUR</a></li>
+                            <li><a class="dropdown-item" href="#">BRL</a></li>
+                        </ul>
+                    </div>
+
+                    <a href="#" class="text-muted text-decoration-none d-none d-sm-inline">Track Order</a>
+                    <a href="contact.html" class="text-muted text-decoration-none d-none d-sm-inline">Contact</a>
+                    <a href="#" class="text-muted text-decoration-none d-none d-sm-inline">FAQs</a>
+                </div>
+
+                <!-- Social Media Icons -->
+                <div class="social-icons d-none d-md-flex gap-3">
+                    <a href="#" class="text-muted"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-muted"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-muted"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-muted"><i class="fab fa-youtube"></i></a>
+                </div>
+
+
+                <!-- right group: contact / faqs / phone -->
+                <div class="d-flex align-items-center gap-3">
+                    <a href="#" class="text-muted text-decoration-none d-none d-md-inline">Contact US 24/7</a>
+                    <a href="tel:+9239427879" class="text-decoration-none">
+                        <i class="fa fa-phone"></i>
+                        <span class="fw-bold ms-1">(+92) 3942 7879</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- collapse for small screens -->
+            <div class="collapse" id="topbarMobile">
+                <div class="py-2 d-flex gap-3">
+                    <a href="#" class="text-muted">Contact</a>
+                    <a href="#" class="text-muted">FAQs</a>
+                    <a href="#" class="text-muted">Track Order</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Header -->
+    <header class="py-3 border-bottom">
+        <div class="container d-flex align-items-center justify-content-between">
+
+            <!-- Logo -->
+            <div class="merto">
+                <img src="images/Merto.png" alt="Merto Logo" class="img-fluid"
+                    style="height:50px; width:auto; object-fit:contain;">
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-container">
+                <form class="d-flex">
+                    <!-- Category Dropdown -->
+                    <div class="dropdown" style="min-width: 160px;">
+                        <button class="btn btn-outline-secondary dropdown-toggle w-100 text-start" type="button"
+                            data-bs-toggle="dropdown">
+                            All Categories
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Living Room</a></li>
+                            <li><a class="dropdown-item" href="#">Bedroom</a></li>
+                            <li><a class="dropdown-item" href="#">Dining Room</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Input -->
+                    <input id="searchInput" class="form-control border-start-0" type="search"
+                        placeholder="Search for products">
+
+                    <!-- Search Button -->
+                    <button class="btn btn-brown" type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+
+                <!-- Expanded Search Box -->
+                <div id="searchBox" class="search-box">
+                    <p class="fw-bold mb-2">Popular search</p>
+                    <div class="popular-tags">
+                        <button class="btn btn-outline-secondary">smartphone</button>
+                        <button class="btn btn-outline-secondary">tablet</button>
+                        <button class="btn btn-outline-secondary">controller</button>
+                        <button class="btn btn-outline-secondary">furniture</button>
+                        <button class="btn btn-outline-secondary">laptop</button>
+                        <button class="btn btn-outline-secondary">playstation</button>
+                        <button class="btn btn-outline-secondary">womens fashion</button>
+                        <button class="btn btn-outline-secondary">home & decor</button>
+                        <button class="btn btn-outline-secondary">camera</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Icons -->
+            <div class="header-icons d-flex align-items-center">
+                <a href="#" class="icon-link text-dark me-3 d-flex align-items-center">
+                    <i class="fa fa-user fs-5"></i>
+                    <span class="ms-1">Account</span>
+                </a>
+                <a href="#" class="icon-link text-dark me-3 position-relative">
+                    <i class="fa fa-heart fs-5"></i>
+                    <span class="ht position-absolute top-0 start-100 translate-middle badge rounded-pill ">3</span>
+                </a>
+                <a href="#" class="icon-link text-dark position-relative">
+                    <i class="fa fa-shopping-cart fs-5"></i>
+                    <span class="ht position-absolute top-0 start-100 translate-middle badge rounded-pill ">5</span>
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+        <div class="container">
+            <!-- Center Menu -->
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item position-relative">
+
+                        <!--  shop by catigories  -->
+                        <div id="categoryMenu" class="category-flyout list-group shadow-sm">
+                            <a href="#" class="list-group-item active bg-brown text-white fw-bold">
+                                <i class="fa fa-bars me-2"></i> SHOP BY CATEGORIES
+                            </a>
+                            <a href="#" class="list-group-item"><i class="fa fa-couch me-2"></i> Living Room</a>
+                            <a href="#" class="list-group-item"><i class="fa fa-bed me-2"></i> Bedroom</a>
+                            <a href="#" class="list-group-item"><i class="fa fa-chair me-2"></i> Dining Room</a>
+                            <a href="#" class="list-group-item"><i class="fa fa-bath me-2"></i> Bathroom</a>
+                            <a href="#" class="list-group-item"><i class="fa fa-utensils me-2"></i> Kitchen Room</a>
+                            <a href="#" class="list-group-item"><i class="fa fa-laptop me-2"></i> Home Office</a>
+                            <a href="#" class="list-group-item"><i class="fa fa-gift me-2"></i> Home Decoration</a>
+                            <a href="#" class="list-group-item"><i class="fa fa-tree me-2"></i> Outdoor</a>
+                            <a href="#" class="list-group-item"><i class="fa fa-percent me-2"></i> Sale Off</a>
+                        </div>
+                        <a id="homeTrigger" class="nav-link dropdown-toggle" href="#">Home</a>
+
+                        <div id="homeDropdown" class="mega-menu bg-white p-4 shadow d-none">
+                            <div class="row row-cols-1 row-cols-md-3 g-4">
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="images/abajora.jpg" class="card-img-top" alt="img">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Supermarket01</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="images/chair.jpg" class="card-img-top" alt="img">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Supermarket02</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="images/chair2.jpg" class="card-img-top" alt="img">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Supermarket03</h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Pages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Right Recently Viewed -->
+            <div class="dropdown">
+                <a class="nav-link dropdown-toggle text-dark" href="#" id="recentlyViewedDropdown" role="button"
+                    data-bs-toggle="dropdown">
+                    Recently viewed
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="#">Product 1</a></li>
+                    <li><a class="dropdown-item" href="#">Product 2</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Section -->
+    <div class="container-fluid hero-section py-4">
+        <div class="row justify-content-end">
+            <!-- العمود الأيمن: الكاروسيل -->
+            <div class="col-md-8">
+                <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+
+                        <!-- Slide 1 -->
+                        <div class="carousel-item active">
+                            <div class="row align-items-center">
+                                <div class="col-md-6 slid123 text-start"> <!-- تغيير من text-end إلى text-center -->
+                                    <p class="text-uppercase fs-5 mb-2">Made in Italy</p>
+                                    <h1 class="fw-bold display-5 mb-3">Full Bed & Upholstered Headboard</h1>
+                                    <button class="btn btn-outline-dark mt-2">SHOP NOW</button>
+                                </div>
+                                <div class="col-md-6 text-center">
+                                    <img src="images/slide1-demo3.png" class="img-fluid rounded"
+                                        style="max-height: 300px;" alt="Bed">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Slide 2 -->
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-6 slid123 text-start">
+                                    <p class="text-uppercase fs-5">New Arrival</p>
+                                    <h1 class="fw-bold display-5">Luxury Sofa Collection</h1>
+                                    <button class="btn btn-outline-dark mt-3">SHOP NOW</button>
+                                </div>
+                                <div class="col-md-6 text-center">
+                                    <img src="images/slide2-demo3.png" class="img-fluid rounded"
+                                        style="max-height: 300px;" alt="Sofa">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-6 slid123 text-start">
+                                    <p class="text-uppercase fs-5">Best Seller</p>
+                                    <h1 class="fw-bold display-5">Modern Chair Set</h1>
+                                    <button class="btn btn-outline-dark mt-3">SHOP NOW</button>
+                                </div>
+                                <div class="col-md-6 text-center">
+                                    <img src="images/slide3-demo3.png" class="img-fluid rounded"
+                                        style="max-height: 300px;" alt="Chair">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Features -->
+    <div class="container py-5 border-top border-bottom">
+        <div class="row text-center text-md-start">
+            <div class="col-md-3 d-flex align-items-center gap-3 border-end border-end-3 border-end-dark">
+                <i class="fa fa-truck fa-2x text-dark"></i>
+                <div>
+                    <h6 class="mb-0">Fast, Free Shipping</h6>
+                    <p class="small text-muted mb-0">On orders over $50</p>
+                </div>
+            </div>
+            <div class="col-md-3 d-flex align-items-center gap-3 border-end border-end-3 border-end-dark">
+                <i class="fa fa-clock fa-2x text-dark"></i>
+                <div>
+                    <h6 class="mb-0">Next Day Delivery</h6>
+                    <p class="small text-muted mb-0">Free – spend over $99</p>
+                </div>
+            </div>
+            <div class="col-md-3 d-flex align-items-center gap-3 border-end border-end-3 border-end-dark">
+                <i class="fa fa-tags fa-2x text-dark"></i>
+                <div>
+                    <h6 class="mb-0">Low Price Guarantee</h6>
+                    <p class="small text-muted mb-0">We offer competitive prices</p>
+                </div>
+            </div>
+            <div class="col-md-3 d-flex align-items-center gap-3">
+                <i class="fa fa-thumbs-up fa-2x mb-2"></i>
+                <div>
+                    <h6 class="mb-0">Quality Guarantee</h6>
+                    <p class="small text-muted mb-0">We Guarantee Our Products</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Sales Section -->
+    <div class="container my-5">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h4 class="section-title">Don't miss this week's sales</h4>
+            <a href="#" class="see-all-link">See All Products</a>
+        </div>
+
+        <div class="owl-carousel owl-theme">
+
+            <!-- Product Card 1 -->
+            <div class="item">
+                <div class="card border-0">
+                    <img src="images/clock.jpg" class="card-img-top" alt="Wall Clock">
+                    <div class="card-body text-start">
+                        <h6 class="card-title">14-inch Fashion Simplicity Wall Clock</h6>
+                        <p class="text-muted">Home Decor</p>
+                        <p class="fw-bold text-dark">$50 <del class="text-muted">$125</del></p>
+                        <span class="badge">-60%</span>
+                        <div class="mt-2">
+                            <i class="fa fa-star text-muted"></i>
+                            <i class="fa fa-star text-muted"></i>
+                            <i class="fa fa-star text-muted"></i>
+                            <i class="fa fa-star text-muted"></i>
+                            <i class="fa fa-star-half-alt text-muted"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="item">
+                <div class="card border-0">
+                    <img src="images/chair2.jpg" class="card-img-top" alt="Studio Chair">
+                    <div class="card-body text-start">
+                        <h6 class="card-title">Studio Designs Home Heather Chair</h6>
+                        <p class="text-muted">Studio Designs</p>
+                        <p class="fw-bold text-dark">$192</p>
+                        <span class="badge">-20%</span>
+                        <div class="mt-2">
+                            <i class="fa fa-star-half-alt text-muted"></i>
+                            <i class="fa fa-star-half-alt text-muted"></i>
+                            <i class="fa fa-star-half-alt text-muted"></i>
+                            <i class="fa fa-star-half-alt text-muted"></i>
+                            <i class="fa fa-star-half-alt text-muted"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="item">
+                <div class="card border-0">
+                    <img src="images/table.jpg" class="card-img-top" alt="Dining Table">
+                    <div class="card-body text-start">
+                        <h6 class="card-title">Mid Century Modern Round Dining Table</h6>
+                        <p class="text-muted">Oak Finish</p>
+                        <p class="fw-bold text-dark">$559 <del class="text-muted">$799</del></p>
+                        <span class="badge">-30%</span>
+                        <div class="mt-2">
+                            <i class="fa fa-star text-muted"></i>
+                            <i class="fa fa-star text-muted"></i>
+                            <i class="fa fa-star text-muted"></i>
+                            <i class="fa fa-star text-muted"></i>
+                            <i class="fa fa-star-half-alt text-muted"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="item">
+                <div class="card border-0">
+                    <img src="images/chair.jpg" class="card-img-top" alt="Armrest Chair">
+                    <div class="card-body text-start">
+                        <h6 class="card-title">High Seating Comfort Armrest Chair</h6>
+                        <p class="text-muted">Built-in Armrest</p>
+                        <p class="fw-bold text-dark">$1,465 <del class="text-muted">$1,865</del></p>
+                        <span class="badge bg-secondary">SOLD OUT</span>
+                        <div class="mt-2">
+                            <i class="fa fa-star text-muted"></i>
+                            <i class="fa fa-star text-muted"></i>
+                            <i class="fa fa-star text-muted"></i>
+                            <i class="fa fa-star text-muted"></i>
+                            <i class="fa fa-star text-muted"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 5 -->
+            <div class="item">
+                <div class="card border-0">
+                    <img src="images/abajora.jpg" class="card-img-top" alt="Table Lamp">
+                    <div class="card-body text-start">
+                        <h6 class="card-title">Sate Table Lamp with Natural Finish</h6>
+                        <p class="text-muted">Lighting</p>
+                        <p class="fw-bold text-dark">$138 <del class="text-muted">$185</del></p>
+                        <span class="badge">-25%</span>
+                        <div class="mt-2">
+                            <i class="fa fa-star text-muted"></i>
+                            <i class="fa fa-star text-muted"></i>
+                            <i class="fa fa-star text-muted"></i>
+                            <i class="fa fa-star text-muted"></i>
+                            <i class="fa fa-star-half-alt text-muted"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Promo Section -->
+    <section class="container my-5">
+        <div class="row g-4">
+
+            <div class="col-lg-7">
+                <a href="#"
+                    class="promo-card promo-lg d-block position-relative overflow-hidden rounded-3 shadow-sm text-decoration-none">
+
+                    <!-- شيلت الباك جراوند الاخضر -->
+                    <img src="images/banner1-demo3.jpg" alt="couch" class="zoom-img">
+
+                    <div class="position-relative h-100 w-100 p-5 text-white d-flex flex-column justify-content-start">
+                        <small class="text-uppercase fw-semibold opacity-75" style="letter-spacing:.08em">Design by
+                            Cozy</small>
+                        <h2 class="display-5 fw-bold lh-1 mt-2">Modern Mini Couch</h2>
+                        <p class="lead mt-2 mb-0 opacity-90">51 Inches Loveseat Sofa</p>
+
+                        <button class="btn btn-outline-light btn-shop">SHOP NOW</button>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-5 d-flex flex-column">
+                <a href="#" class="promo-card promo-sm d-block position-relative overflow-hidden rounded-3 shadow-sm">
+                    <img src="images/banner2-mobile-demo3.jpg" alt="plant pot"
+                        class="zoom-img w-100 h-100 object-fit-cover">
+                    <div
+                        class="position-absolute top-0 start-0 h-100 w-100 p-4 p-md-5 d-flex flex-column justify-content-center align-items-start text-dark">
+                        <h3 class="h2 fw-bold mb-1">Plant Pots<br><span class="fw-bold">Only $14.00</span></h3>
+                        <p class="text-muted mb-3">Don't miss the opportunity...</p>
+                        <button class="btn btn-outline-dark btn-shop">SHOP NOW</button>
+                    </div>
+                    <span class="discount-badge">-30%</span>
+                </a>
+                <a href="#" class="promo-card promo-sm d-block position-relative overflow-hidden rounded-3 shadow-sm">
+                    <img src="images/banner3-mobile-demo3.jpg" alt="plant pot"
+                        class="zoom-img w-100 h-100 object-fit-cover">
+                    <div
+                        class="position-absolute top-0 start-0 h-100 w-100 p-4 p-md-5 d-flex flex-column justify-content-center align-items-start text-dark">
+                        <h3 class="h2 fw-bold mb-1">Plant Pots<br><span class="fw-bold">Only $14.00</span></h3>
+                        <p class="text-muted mb-3">Don't miss the opportunity...</p>
+                        <button class="btn btn-outline-dark btn-shop">SHOP NOW</button>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="container py-5">
+
+        <!-- Cyber Weekend -->
+        <h2 class="text-center mb-4 fw-bold">Cyber Weekend</h2>
+
+        <!-- الدواير -->
+        <div class="d-flex justify-content-center gap-3 mb-3">
+            <div class="discount-circle">+10%<br>OFF</div>
+            <div class="discount-circle">+20%<br>OFF</div>
+            <div class="discount-circle">+30%<br>OFF</div>
+            <div class="discount-circle">+40%<br>OFF</div>
+            <div class="discount-circle filled">+50%<br>OFF</div>
+        </div>
+
+        <!-- SALE OFF -->
+        <div class="sale-text mb-5">SALE OFF</div>
+
+        <!-- New Arrivals -->
+        <h3 class="text-center fw-bold mb-4">New Arrivals</h3>
+
+        <div class="container my-5">
+            <div class="owl-carousel owl-theme">
+
+                <!-- Product Card 1 -->
+                <div class="item">
+                    <div class="card border-0">
+                        <img src="images/clock.jpg" class="card-img-top" alt="Wall Clock">
+                        <div class="card-body text-start">
+                            <h6 class="card-title">14-inch Fashion Simplicity Wall Clock</h6>
+                            <p class="text-muted">Home Decor</p>
+                            <p class="fw-bold text-dark">$50 <del class="text-muted">$125</del></p>
+                            <span class="badge">-60%</span>
+                            <div class="mt-2">
+                                <i class="fa fa-star text-muted"></i>
+                                <i class="fa fa-star text-muted"></i>
+                                <i class="fa fa-star text-muted"></i>
+                                <i class="fa fa-star text-muted"></i>
+                                <i class="fa fa-star-half-alt text-muted"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="item">
+                    <div class="card border-0">
+                        <img src="images/chair2.jpg" class="card-img-top" alt="Studio Chair">
+                        <div class="card-body text-start">
+                            <h6 class="card-title">Studio Designs Home Heather Chair</h6>
+                            <p class="text-muted">Studio Designs</p>
+                            <p class="fw-bold text-dark">$192</p>
+                            <span class="badge">-20%</span>
+                            <div class="mt-2">
+                                <i class="fa fa-star-half-alt text-muted"></i>
+                                <i class="fa fa-star-half-alt text-muted"></i>
+                                <i class="fa fa-star-half-alt text-muted"></i>
+                                <i class="fa fa-star-half-alt text-muted"></i>
+                                <i class="fa fa-star-half-alt text-muted"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="item">
+                    <div class="card border-0">
+                        <img src="images/table.jpg" class="card-img-top" alt="Dining Table">
+                        <div class="card-body text-start">
+                            <h6 class="card-title">Mid Century Modern Round Dining Table</h6>
+                            <p class="text-muted">Oak Finish</p>
+                            <p class="fw-bold text-dark">$559 <del class="text-muted">$799</del></p>
+                            <span class="badge">-30%</span>
+                            <div class="mt-2">
+                                <i class="fa fa-star text-muted"></i>
+                                <i class="fa fa-star text-muted"></i>
+                                <i class="fa fa-star text-muted"></i>
+                                <i class="fa fa-star text-muted"></i>
+                                <i class="fa fa-star-half-alt text-muted"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="item">
+                    <div class="card border-0">
+                        <img src="images/chair.jpg" class="card-img-top" alt="Armrest Chair">
+                        <div class="card-body text-start">
+                            <h6 class="card-title">High Seating Comfort Armrest Chair</h6>
+                            <p class="text-muted">Built-in Armrest</p>
+                            <p class="fw-bold text-dark">$1,465 <del class="text-muted">$1,865</del></p>
+                            <span class="badge bg-secondary">SOLD OUT</span>
+                            <div class="mt-2">
+                                <i class="fa fa-star text-muted"></i>
+                                <i class="fa fa-star text-muted"></i>
+                                <i class="fa fa-star text-muted"></i>
+                                <i class="fa fa-star text-muted"></i>
+                                <i class="fa fa-star text-muted"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 5 -->
+                <div class="item">
+                    <div class="card border-0">
+                        <img src="images/abajora.jpg" class="card-img-top" alt="Table Lamp">
+                        <div class="card-body text-start">
+                            <h6 class="card-title">Sate Table Lamp with Natural Finish</h6>
+                            <p class="text-muted">Lighting</p>
+                            <p class="fw-bold text-dark">$138 <del class="text-muted">$185</del></p>
+                            <span class="badge">-25%</span>
+                            <div class="mt-2">
+                                <i class="fa fa-star text-muted"></i>
+                                <i class="fa fa-star text-muted"></i>
+                                <i class="fa fa-star text-muted"></i>
+                                <i class="fa fa-star text-muted"></i>
+                                <i class="fa fa-star-half-alt text-muted"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+        <div class="container my-5">
+            <div class="owl-carousel owl-theme">
+
+                <!-- Product Card 1 -->
+                <div class="item">
+                    <div class="card border-0">
+                        <img src="images/abajora.jpg" class="card-img-top" alt="Wall Clock">
+                        <div class="card-body text-start">
+                            <h6 class="card-title">14-inch Fashion Simplicity Wall Clock</h6>
+                            <p class="text-muted">Home Decor</p>
+                            <p class="fw-bold text-dark">$50 <del class="text-muted">$125</del></p>
+                            <span class="badge">-60%</span>
+                            <div class="mt-2">
+                                <i class="fa fa-star text-muted"></i>
+                                <i class="fa fa-star text-muted"></i>
+                                <i class="fa fa-star text-muted"></i>
+                                <i class="fa fa-star text-muted"></i>
+                                <i class="fa fa-star-half-alt text-muted"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="item">
+                    <div class="card border-0">
+                        <img src="images/chair.jpg" class="card-img-top" alt="Studio Chair">
+                        <div class="card-body text-start">
+                            <h6 class="card-title">Studio Designs Home Heather Chair</h6>
+                            <p class="text-muted">Studio Designs</p>
+                            <p class="fw-bold text-dark">$192</p>
+                            <span class="badge">-20%</span>
+                            <div class="mt-2">
+                                <i class="fa fa-star-half-alt text-muted"></i>
+                                <i class="fa fa-star-half-alt text-muted"></i>
+                                <i class="fa fa-star-half-alt text-muted"></i>
+                                <i class="fa fa-star-half-alt text-muted"></i>
+                                <i class="fa fa-star-half-alt text-muted"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="item">
+                    <div class="card border-0">
+                        <img src="images/table.jpg" class="card-img-top" alt="Dining Table">
+                        <div class="card-body text-start">
+                            <h6 class="card-title">Mid Century Modern Round Dining Table</h6>
+                            <p class="text-muted">Oak Finish</p>
+                            <p class="fw-bold text-dark">$559 <del class="text-muted">$799</del></p>
+                            <span class="badge">-30%</span>
+                            <div class="mt-2">
+                                <i class="fa fa-star text-muted"></i>
+                                <i class="fa fa-star text-muted"></i>
+                                <i class="fa fa-star text-muted"></i>
+                                <i class="fa fa-star text-muted"></i>
+                                <i class="fa fa-star-half-alt text-muted"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="item">
+                    <div class="card border-0">
+                        <img src="images/chair2.jpg" class="card-img-top" alt="Armrest Chair">
+                        <div class="card-body text-start">
+                            <h6 class="card-title">High Seating Comfort Armrest Chair</h6>
+                            <p class="text-muted">Built-in Armrest</p>
+                            <p class="fw-bold text-dark">$1,465 <del class="text-muted">$1,865</del></p>
+                            <span class="badge bg-secondary">SOLD OUT</span>
+                            <div class="mt-2">
+                                <i class="fa fa-star text-muted"></i>
+                                <i class="fa fa-star text-muted"></i>
+                                <i class="fa fa-star text-muted"></i>
+                                <i class="fa fa-star text-muted"></i>
+                                <i class="fa fa-star text-muted"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 5 -->
+                <div class="item">
+                    <div class="card border-0">
+                        <img src="images/clock.jpg" class="card-img-top" alt="Table Lamp">
+                        <div class="card-body text-start">
+                            <h6 class="card-title">Sate Table Lamp with Natural Finish</h6>
+                            <p class="text-muted">Lighting</p>
+                            <p class="fw-bold text-dark">$138 <del class="text-muted">$185</del></p>
+                            <span class="badge">-25%</span>
+                            <div class="mt-2">
+                                <i class="fa fa-star text-muted"></i>
+                                <i class="fa fa-star text-muted"></i>
+                                <i class="fa fa-star text-muted"></i>
+                                <i class="fa fa-star text-muted"></i>
+                                <i class="fa fa-star-half-alt text-muted"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <!-- زرار Show All -->
+        <div class="text-center mt-4">
+            <a href="#" class="btn btn-link fw-bold text-dark">See All Products</a>
+        </div>
+    </div>
+
+
+    <!-- Banner -->
+    <div class="container py-5">
+        <div class="banner mb-5">
+            <div>
+                <h5 class="fw-bold">Earn Cash Back For The Things You Buy Every Where</h5>
+                <p class="mb-0">Application via Merto. <a href="#" class="text-dark">Terms & Conditions.</a></p>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+                <button class="btn">VIEW MORE</button>
+
+                <div class="d-flex gap-2">
+                    <img src="images/payments-2-1.png" alt="pay" style="height:150px;" class="img-fluid"
+                        style="height:32px; width:auto; object-fit:contain">
+                </div>
+            </div>
+        </div>
+
+        <!-- Shop by Department -->
+        <h3 class="text-center fw-bold mb-5">Shop by Department</h3>
+
+        <div class="row text-center">
+            <div class="col-6 col-md-3">
+                <div class="circle">
+                    <img src="images/image-box-1.jpg" alt="Coffee Table">
+                </div>
+                <div class="product-title">Coffee Table</div>
+                <div class="product-price">from $20</div>
+                <a href="#" class="shop-link text-dark">Shop now →</a>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="circle">
+                    <img src="images/image-box-2.jpg" alt="Sectionals">
+                </div>
+                <div class="product-title">Sectionals</div>
+                <div class="product-price">from $300</div>
+                <a href="#" class="shop-link text-dark">Shop now →</a>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="circle">
+                    <img src="images/image-box-3.jpg" alt="Flower Vase">
+                </div>
+                <div class="product-title">Flower Vase</div>
+                <div class="product-price">from $5</div>
+                <a href="#" class="shop-link text-dark">Shop now →</a>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="circle">
+                    <img src="images/image-box-4.jpg" alt="Headboard">
+                </div>
+                <div class="product-title">Headboard Sale Off</div>
+                <div class="product-price"></div>
+                <a href="#" class="shop-link text-dark">Shop now →</a>
+            </div>
+        </div>
+
+    </div>
+
+    <hr class="mb-5">
+
+    <div class="container py-4 text-center">
+        <div class="row justify-content-center align-items-center g-4">
+            <div class="col-6 col-md-2"><a href="#"><img src="images/furniture-brand-1.jpg" alt="Brand1"
+                        class="img-fluid"></a></div>
+            <div class="col-6 col-md-2"><a href="#"><img src="images/furniture-brand-2-200x80.jpg" alt="Brand2"
+                        class="img-fluid"></a></div>
+            <div class="col-6 col-md-2"><a href="#"><img src="images/furniture-brand-3.jpg" alt="Brand3"
+                        class="img-fluid"></a></div>
+            <div class="col-6 col-md-2"><a href="#"><img src="images/furniture-brand-4.jpg" alt="Brand4"
+                        class="img-fluid"></a></div>
+            <div class="col-6 col-md-2"><a href="#"><img src="images/furniture-brand-5.jpg" alt="Brand5"
+                        class="img-fluid"></a></div>
+            <div class="col-6 col-md-2"><a href="#"><img src="images/furniture-brand-6.jpg" alt="Brand5"
+                        class="img-fluid"></a></div>
+        </div>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="newsletter mb-5">
+        <h3 class="fw-bold">Join our newsletter</h3>
+        <p class="text-muted">Get recommendations, tips, updates, promotions and more.</p>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="enter your email address">
+                        <button class="btn btn-white"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3 mb-4">
+                    <div class="merto">
+                        <img src="images/Merto.png" alt="Merto Logo" class="img-fluid"
+                            style="height:50px; width:auto; object-fit:contain;">
+                    </div>
+                    <p class="mt-3"><i class="fa-solid fa-location-dot"></i> 29 SE 2nd Ave, Miami<br> Florida 33131,
+                        United States</p>
+                    <p><i class="fa-solid fa-envelope"></i> info@example.com</p>
+                    <p><strong>(+92) 3942 7879</strong></p>
+                </div>
+
+                <div class="col-md-2 mb-4">
+                    <h6 class="fw-bold">SHOP MORE</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">New Arrival</a></li>
+                        <li><a href="#">Sale off</a></li>
+                        <li><a href="#">Living Room</a></li>
+                        <li><a href="#">Bedroom</a></li>
+                        <li><a href="#">Dinner Room</a></li>
+                        <li><a href="#">Bathroom</a></li>
+                        <li><a href="#">Kitchen Room</a></li>
+                        <li><a href="#">Home Office</a></li>
+                        <li><a href="#">Home Decoration</a></li>
+                        <li><a href="#">Outdoor</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2 mb-4">
+                    <h6 class="fw-bold">SHOPPING</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Wishlist</a></li>
+                        <li><a href="#">Shop by Brand</a></li>
+                        <li><a href="#">Offers</a></li>
+                        <li><a href="#">Track order</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2 mb-4">
+                    <h6 class="fw-bold">INFORMATION</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2 mb-4">
+                    <h6 class="fw-bold">ACCOUNT</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Cart</a></li>
+                        <li><a href="#">My account</a></li>
+                        <li><a href="#">My orders</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                        <li><a href="#">Affiliate Program</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+            <div class="container-fluid border-top py-3">
+                <div class="row align-items-center">
+
+
+                    <div class="col-md-4 text-center">
+                        <p class="mb-0 text-muted">Copyright © Merto. All Rights Reserved</p>
+                    </div>
+
+
+                    <div class="col-md-4 d-flex justify-content-start social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+
+
+                    <div class="col-md-4 text-end">
+                        <img src="images/payment-icons-2.png" alt="payment-icons" class="img-fluid"
+                            style="max-height:30px;">
+                    </div>
+
+                </div>
+            </div>
+
+    </footer>
+
+
+    <!-- UP button -->
+    <button id="scrollTopBtn" title="Go to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
